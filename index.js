@@ -1,16 +1,6 @@
 import { offersController } from './controllers/offers.controller'
 import { authController } from './controllers/auth.controller'
 
-/*
- * Runs Migrations
- */
-var exec  = require('child_process').exec;
-var command = "./node_modules/.bin/pg-migrate up";
-exec(command, function(error){
-  console.error(error);
-});
-
-
 var express = require('express');
 var app = express();
 
